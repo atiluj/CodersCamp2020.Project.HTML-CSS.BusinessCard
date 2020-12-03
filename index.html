@@ -5,14 +5,124 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-
+    <title>Julita Osman</title>
+    <script src="https://kit.fontawesome.com/2b8e7021c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <p>CZEŚĆ!</p>
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-down second"></i>
+    </header>
+    <nav id="navigation">
+        <ul>
+            <li><a href="#navigation">O MNIE</a></li>
+            <li><a href="#to-hobby">PROJEKTY</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+        </ul>
+    </nav>
+    <div id="description" class="clearfix">
+        <img src="img/profil.jpg" alt="">
+        <p> Witam Cię na mojej stronie - wizytówce! ;) <br> Mam na imię Julita i jestem studentką informatyki na
+            Uniwersytecie
+            Wrocławskim. Informatyką interesuję się
+            od liceum i jak
+            najwięcej chcę rozwijać się w tym kierunku. Poznaj mnie lepiej scrolując w dół! </p>
+    </div>
 
-<p>Test</p>
+    <div id="to-hobby" class="clearfix">
+        <a href="#hobby">W WOLNYM CZASIE</a>
+    </div>
+
+    <div id="projects">
+        <p>MOJE NAJLEPSZE PROJEKTY</p>
+        <div class="project clearfix">
+            <img src="img/project.jpg" alt="">
+            <div class="project-description">
+                <h3>PROJEKT 1</h3>
+                <p>Tu w niedalekiej przyszłości umieszcze swoje najlepsze projekty oraz ich krótki opis. Tu w
+                    niedalekiej
+                    przyszłości umieszcze swoje najlepsze projekty oraz ich krótki opis. Tu w niedalekiej przyszłości
+                    umieszcze swoje najlepsze projekty oraz ich krótki opis.</p>
+            </div>
+        </div>
+        <div class="project clearfix">
+            <div class="project-description right">
+                <h3>PROJEKT 2</h3>
+                <p>Tu w niedalekiej przyszłości umieszcze swoje najlepsze projekty oraz ich krótki opis. Tu w
+                    niedalekiej
+                    przyszłości umieszcze swoje najlepsze projekty oraz ich krótki opis. Tu w niedalekiej przyszłości
+                    umieszcze swoje najlepsze projekty oraz ich krótki opis.</p>
+            </div>
+            <img src="img/project.jpg" alt="">
+        </div>
+        <div class="project clearfix">
+            <img src="img/project.jpg" alt="">
+            <div class="project-description">
+                <h3>PROJEKT 3</h3>
+                <p>Tu w niedalekiej przyszłości umieszcze swoje najlepsze projekty oraz ich krótki opis. Tu w
+                    niedalekiej
+                    przyszłości umieszcze swoje najlepsze projekty oraz ich krótki opis. Tu w niedalekiej przyszłości
+                    umieszcze swoje najlepsze projekty oraz ich krótki opis.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="hobby">
+        <div class="container">
+            <p>W PRZERWACH OD PROGRAMOWANIA...</p>
+            <!-- bootstrap -->
+            <div class="activity pic1"><img src="img/fly_01.jpg" alt="">
+                <p>LATAM</p>
+            </div>
+            <div class="activity pic2"><img src="img/mountains.jpg" alt="">
+                <p>CHODZĘ PO GÓRACH</p>
+            </div>
+            <div class="activity pic3"><img src="img/piano.jpg" alt="">
+                <p>GRAM NA PIANINIE</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <div id="contact" class="clearfix">
+            <div class="formularz">
+                <p>SKONTAKTUJ SIĘ ZE MNA!</p>
+                <form action="mailto:julita.osman@mail.pl" method="post">
+                    <div>
+                        <label>Kim jesteś?</label>
+                        <input type="text" name="nazwisko" /></div>
+                    <div>
+                        <label>Mail kontatkowy</label>
+                        <input type="text" name="nazwisko" />
+                    </div>
+                    <textarea name="texarea"></textarea>
+
+                </form>
+            </div>
+            <div class="con">
+                <div class="icon clearfix">
+                    <i class="far fa-envelope"></i>
+                    <P>JULITA.OSMAN@GMAIL.COM</P>
+                </div>
+                <div class="icon clearfix">
+                    <i class="fab fa-github"></i>
+                    <p>ATILUJ</p>
+                </div>
+                <div class="icon clearfix">
+                    <i class="far fa-address-card"></i>
+                    <p> MOJE CV</p>
+                </div>
+            </div>
+        </div>
+        <p>&copy JULITA OSMAN 2020</p>
+    </footer>
 
 </body>
+
 </html>

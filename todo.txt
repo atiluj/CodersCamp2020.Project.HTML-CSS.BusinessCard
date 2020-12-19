@@ -1,10 +1,12 @@
 dopisać in progress na obrazkach
 
-responsywnośc poniżej 725px
-
 poobserowwać reponsywnośc
 
+ostyować button WYŚLIJ
+
 cv
+
+zresamplowac zdjęcie profilowe
 
 formularz
 https://www.kurshtml.edu.pl/html/przyklad,formularze.html

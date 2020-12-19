@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+/* clearfix*/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,126 +39,205 @@ header {
 header p {
     position: absolute;
     width: 100%;
-    bottom: 28%;
+    bottom: 50%;
+    transform: translateY(50%);
     color: white;
-    letter-spacing: 5px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-size: 32vh;
+    font-weight: 500;
+    animation: move 4s ease 1;
+}
 
-    font-size: 30vh;
+@keyframes move {
+    0% {
+        opacity: 0;
+        left: 0;
+    }
+
+    5% {
+        opacity: 0;
+        left: 0;
+    }
+
+    10% {
+        opacity: 0;
+        letter-spacing: 35px;
+    }
+
+    30% {
+        opacity: 0.7;
+        letter-spacing: 20px;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 header i {
     position: absolute;
-    padding: 4px;
+    /* padding: 4px; */
     right: 1.3vh;
-    bottom: 0.2vh;
-    transition: 0.9s;
-    opacity: 0;
-
+    bottom: calc(3.5vh - 0.8vh);
+    transform: translateY(50%);
     font-size: 4vh;
+    color: white;
+    text-shadow: 0 -1.5vh 0 white;
+    animation: scroll 3s 6s linear infinite;
 }
 
-header i.second {
-    bottom: 2vh;
-}
+@keyframes scroll {
+    0% {
+        right: 1.3vh;
+    }
 
-header:hover>i {
-    color: black;
-    opacity: 1;
-    transform: scale(1.3);
+    1% {
+        right: 0.9vh;
+    }
+
+    2% {
+        right: 1.7vh;
+    }
+
+    4% {
+        right: 0.9vh;
+    }
+
+    6% {
+        right: 1.7vh;
+    }
+
+    8% {
+        right: 0.9vh;
+    }
+
+    10% {
+        right: 1.7vh;
+    }
+
+    12% {
+        right: 0.9vh;
+    }
+
+    14% {
+        right: 1.7vh;
+    }
+
+    15% {
+        right: 1.3vh;
+    }
+
+    100% {
+        right: 1.3vh;
+    }
 }
 
 /*NAWIGACJA*/
 nav {
+    display: flex;
+    justify-content: center;
     position: relative;
-    margin-bottom: 3vh;
-    /* top: 0; */
-    background-color: rgba(26, 22, 19, 0.7);
-
-    height: 7vh;
     margin-top: -7vh;
+    margin-bottom: 3vh;
+    height: 7vh;
+    background-color: rgba(26, 22, 19, 0.7);
 }
 
 nav ul {
+    display: flex;
     height: 100%;
-    margin: 0 auto;
     list-style: none;
     font-size: 0;
-
+    width: 100%;
     max-width: 1024px;
 }
 
 nav ul li {
-    display: inline-block;
-    height: 100%;
     width: 33.3%;
     text-align: center;
 }
 
 nav ul li a {
-    box-sizing: border-box;
     display: block;
     color: white;
+    line-height: 7vh;
+    font-size: 5vh;
     text-decoration: none;
     letter-spacing: 1px;
     opacity: 0.7;
     transition: 0.3s;
-
-    line-height: 7vh;
-    font-size: 5vh;
 }
 
 nav ul li:hover a {
     transform: scale(1.1);
     opacity: 1;
     color: white;
-    text-decoration: none;
-}
-
-/* clearfix*/
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 /*O MNIE*/
 #description {
     display: flex;
-    /* flex-direction: row; */
-    width: 92%;
-    margin: 3vh auto;
-}
-
-#description p {
-    display: block;
-    box-sizing: border-box;
-    width: 86%;
-    color: #1a1613;
-
-    padding-top: 3vh;
-    font-size: 3vh;
-    line-height: 4.5vh;
+    width: 92.5%;
+    margin-left: 7.5%;
 }
 
 #description img {
     display: block;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    height: 22vh;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     margin-right: 4vh;
     opacity: 0.9;
+}
 
-    height: 22vh;
+#description div {
+    width: 100%;
+    position: relative;
+}
+
+#description p {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 86%;
+    color: #1a1613;
+    padding: 1vh 0;
+    font-size: 3vh;
+    line-height: 4.5vh;
+    animation: show 3s 0.8s ease 1 both;
+    left: 0;
+}
+
+@keyframes show {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    80% {
+        left: 0;
+        /* opacity: 1; */
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+#description span {
+    padding-top: 0.3vh;
 }
 
 /*przekierwoanie do HOBBY*/
 #to-hobby a {
     display: block;
     position: relative;
-    box-sizing: border-box;
     width: 26%;
-    bottom: 7vh;
-    margin-right: 0;
+    bottom: 3.5vh;
     padding-left: 2.5%;
     color: rgba(0, 0, 0, 0.589);
     background-color: rgba(116, 79, 58, 0.20);
@@ -177,7 +263,7 @@ nav ul li:hover a {
 /* MOJE NAJLEPSZE PROJEKTY */
 #projects {
     margin: 0 auto;
-    height: 96vh;
+    height: 94vh;
 }
 
 #projects p {
@@ -243,13 +329,12 @@ nav ul li:hover a {
     opacity: 0.75;
     transition: 0.4s;
 
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 .project:hover img {
     opacity: 0.5;
-
-    transform: scale(1.17);
+    transform: scale(1.1);
 }
 
 /* hobby */
@@ -305,19 +390,19 @@ nav ul li:hover a {
     color: rgba(0, 0, 0, 0);
     transform: scale(1.1);
     transition: 0.7s;
-
     font-size: 30px;
 }
 
 .activity:hover p {
     color: rgba(255, 255, 255, 0.65);
     font-weight: 200;
+    opacity: 1;
 
     letter-spacing: 4px;
 }
 
 .pic1:hover p {
-    color: rgba(0, 0, 0, 0.65);
+    color: rgba(0, 0, 0, 0.678);
 }
 
 /* STOPKA */
@@ -325,7 +410,21 @@ nav ul li:hover a {
 
 footer {
     width: 100%;
-    background-color: rgba(65, 30, 9, 0.363);
+    background-color: rgb(214, 172, 105);
+    /* background-color: rgba(16, 58, 71, 0.753); */
+    /* background-color: rgba(68, 11, 11, 0.75); */
+    /* background-color: rgba(2, 31, 17, 0.7); */
+    /* background-color: rgba(65, 30, 9, 0.363); */
+}
+
+footer #contact .wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+footer #contact .wrap .FormAndCon {
+    display: flex;
+    flex-direction: row;
 }
 
 footer #contact .wrap p {
@@ -414,334 +513,3 @@ footer p {
 }
 
 /* RESPONSYWNOŚĆ MAX-WIDTH:1380PX*/
-
-@media (max-width: 1380px) {
-    header p {
-        font-size: 25vh;
-        bottom: 30%;
-    }
-
-    header i {
-        font-size: 3.5vh;
-    }
-
-    nav ul li a {
-        font-size: 4.5vh;
-    }
-
-    #description p {
-        font-size: 2.2vh;
-    }
-
-    #to-hobby a {
-        font-size: 2.2vh;
-    }
-
-    #projects p {
-        font-size: 3.7vh;
-    }
-
-    #projects .project .project-description p {
-        font-size: 2.5vh;
-        line-height: 3.5vh;
-    }
-
-    #projects .project .project-description h3 {
-        font-size: 3.1vh;
-    }
-
-    .project img {
-        transform: scale(1);
-    }
-
-    .project:hover img {
-        transform: scale(1.07);
-    }
-
-    .container p {
-        font-size: 3.6vh;
-    }
-
-    .activity p {
-        font-size: 26px;
-    }
-
-    .activity:hover p {
-        letter-spacing: 2px;
-    }
-}
-
-@media (max-width: 1155px) {
-    header i {
-        font-size: 3vh;
-    }
-
-    nav ul li a {
-        font-size: 4vh;
-    }
-
-    header i {
-        bottom: 0.4vh;
-
-        font-size: 3.6vh;
-    }
-
-    header:hover>i {
-        transform: scale(1.1);
-    }
-
-    #description p {
-        padding-top: 2vh;
-        line-height: 3.5vh;
-    }
-
-    #to-hobby a {
-        width: 30%;
-        font-size: 2vh;
-    }
-
-    #to-hobby a:hover {
-        width: 34%;
-    }
-
-    .project {
-        margin-bottom: 6vh;
-    }
-
-    #projects .project .project-description p {
-        font-size: 2.2vh;
-        line-height: 3vh;
-    }
-
-    #projects .project .project-description h3 {
-        font-size: 2.9vh;
-    }
-
-    .project:hover img {
-        transform: scale(1.03);
-    }
-
-    .container p {
-        font-size: 3vh;
-    }
-
-    .activity p {
-        font-size: 19px;
-    }
-
-    .activity:hover p {
-        letter-spacing: 1.7px;
-    }
-}
-
-@media(max-width:1074px) {
-    header:hover>i {
-        opacity: 0;
-    }
-}
-
-@media(max-width:960px) {
-    #description p {
-        font-size: 2vh;
-        line-height: 3vh;
-        padding-top: ;
-    }
-
-    #to-hobby a {
-        height: 3.5vh;
-        font-size: 2vh;
-        line-height: 3.5vh;
-    }
-
-    .project img {
-        height: 90%;
-    }
-
-    #projects .project .project-description p {
-        font-size: 2.1vh;
-        line-height: 2.6vh;
-    }
-
-    #projects .project .project-description h3 {
-        font-size: 2.2vh;
-        line-height: 2vh;
-    }
-
-}
-
-@media(max-width: 830px) {
-    header p {
-        font-size: 18vh;
-        bottom: 35%;
-    }
-
-    nav {
-        height: 6vh;
-        margin-top: -6vh;
-    }
-
-    nav ul li a {
-        font-size: 3vh;
-        line-height: 6vh;
-    }
-
-    #description p {
-        font-size: 1.8vh;
-        padding-top: 1vh;
-        line-height: 3vh;
-    }
-
-    #to-hobby a {
-        height: 3vh;
-        width: 30%;
-        font-size: 1.8vh;
-        line-height: 3vh;
-    }
-
-    #projects {
-        height: 90vh;
-    }
-
-    .project {
-        margin-bottom: 4vh;
-    }
-
-    .project img {
-        height: 80%;
-    }
-
-    #projects .project .project-description p {
-        font-size: 1.8vh;
-        line-height: 2.5vh;
-    }
-
-    #projects .project .project-description h3 {
-        font-size: 2vh;
-        line-height: 2vh;
-    }
-
-    #hobby .container {
-        padding-top: 0;
-    }
-
-    .container p {
-        font-size: 2.5vh;
-    }
-
-    .activity {
-        width: 66%;
-        margin-left: 17%;
-        margin-right: 17%;
-    }
-
-    .activity img {
-        margin: 1vh auto;
-    }
-
-    .activity p {
-        font-size: 19px;
-    }
-
-    .activity:hover p {
-        letter-spacing: 1.7px;
-    }
-}
-
-/* 725 */
-
-/* @media (){
-header p {
-        font-size: 30vh;
-}
-
-header i {
-    font-size: 4vh;
-}
-
-nav {
-    height: 7vh;
-    margin-top: -7vh;
-}
-
-nav ul {
-    max-width: 1024px;
-}
-
-
-nav ul li a {
-    line-height: 7vh;
-    font-size: 5vh;
-}
-
-description {
-    width: 92%;
-    margin: 3vh auto;
-}
-
-#description p {
-    padding-top: 3vh;
-    font-size: 3vh;
-    line-height: 4.5vh;
-}
-
-#description img {
-    height: 22vh;
-}
-
-#to-hobby a {
-    height: 4vh;
-    line-height: 4vh;
-    font-size: 3vh;
-    letter-spacing: 1px;
-}
-
-#projects p {
-    font-size: 4vh;
-    letter-spacing: 2px;
-}
-
-.project {
-    height: 23vh;
-}
-
-#projects .project .project-description p {
-    font-size: 3vh;
-    line-height: 4.5vh;
-}
-
-#projects .project .project-description h3 {
-    letter-spacing: 4px;
-    line-height: 4.5vh;
-    font-size: 3.3vh;
-}
-
-.project img {
-    transform: scale(1.1);
-}
-
-.project:hover img {
-    transform: scale(1.17);
-}
-
-.container p {
-    letter-spacing: 3px;
-    font-weight: 290;
-    font-size: 4vh;
-}
-
-.activity {
-    width: 33.3%;
-}
-
-.activity img {
-    width: 100%;
-}
-
-.activity p {
-    font-size: 30px;
-}
-
-.activity:hover p {
-    letter-spacing: 4px;
-}
-*/

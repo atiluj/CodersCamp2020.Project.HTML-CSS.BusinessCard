@@ -28,7 +28,7 @@ body {
 header {
     position: relative;
     min-height: 72vh;
-    background-image: url("img/02.jpg");
+    background-image: url("/02.2ed9ac67.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -929,3 +929,5 @@ footer p.copyright {
         display: none;
     }
 }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

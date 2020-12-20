@@ -177,6 +177,7 @@ nav ul li:hover a {
 
 /*O MNIE*/
 #description {
+    position: relative;
     display: flex;
     width: 92.5%;
     margin-left: 7.5%;
@@ -189,11 +190,13 @@ nav ul li:hover a {
     border: 2px solid rgba(0, 0, 0, 0.2);
     margin-right: 40px;
     opacity: 0.9;
+    float: left;
 }
 
 #description div {
     width: 100%;
     position: relative;
+    float: left;
 }
 
 #description p {
@@ -564,6 +567,7 @@ footer #contact .wrap p {
     width: 100%;
     text-align: left;
     font-size: 23px;
+    line-height: 25px;
     padding: 0;
     margin-left: 30px;
     color: wheat;
@@ -927,6 +931,319 @@ footer p.copyright {
 
     #to-hobby a {
         display: none;
+    }
+
+    .project {
+        margin: 60px;
+        margin-bottom: 90px;
+    }
+
+    .project img {
+        width: 65%;
+        height: 130%;
+    }
+
+    #projects p {
+        width: 60%;
+        padding: 10px 0;
+        padding-top: 17px;
+    }
+
+    #projects .project .project-description p {
+        display: none;
+    }
+
+    .activity p {
+        font-size: 23px;
+    }
+
+    .activity img {
+        width: 70%;
+    }
+
+    .container p {
+        font-size: 25px;
+        margin-top: 110px;
+    }
+}
+
+@media(max-width: 764px) {
+    #description p {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    header {
+        min-height: 60vh;
+    }
+
+    #description {
+        margin: 14px auto;
+        margin-bottom: 25px;
+    }
+
+    #description img {
+        height: 32vh;
+    }
+
+    #description .text p {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .project img {
+        width: 55%;
+        height: 115%;
+    }
+
+    #projects .project {
+        justify-content: center;
+    }
+
+    nav {
+        margin-top: calc(-18vh - 24px);
+        height: calc(18vh + 24px);
+    }
+
+    nav ul li {
+        padding: 4px;
+        height: 18vh;
+    }
+
+    nav ul li a {
+        line-height: 6vh;
+        font-size: 4vh;
+    }
+
+    header p {
+        font-size: 16vh;
+        transform: translateY(-1%);
+    }
+
+    #projects .project .project-description h3 {
+        font-size: 25px;
+    }
+
+    .project:hover img {
+        opacity: 0.8;
+        transform: scale(0.96);
+    }
+
+    .container p {
+        font-size: 23px;
+    }
+}
+
+@media(max-width: 657px) {
+    #description {
+        width: 95%;
+    }
+
+    #description p {
+        font-size: 20px;
+    }
+
+    #description img {
+        margin-right: 20px;
+    }
+
+    .container p {
+        font-size: 23px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .activity img {
+        width: 90%;
+    }
+
+    #projects .project .project-description h3 {
+        font-size: 20px;
+    }
+
+    .project img {
+        width: 50%;
+        height: 107%;
+    }
+
+    footer #contact .wrap .title {
+        font-size: 30px;
+    }
+
+    #contact .wrap form {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #contact .wrap .con .icon p {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+}
+
+@media(max-width: 590px) {
+    header {
+        min-height: 55vh;
+    }
+
+    header p {
+        font-size: 12vh;
+        transform: translateY(-15%);
+    }
+
+    #navigation {
+        margin-bottom: 0;
+    }
+
+    #description {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    #description p {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    #projects .project {
+        margin: 50px auto;
+    }
+
+    #projects .project img {
+        height: 120%;
+        width: 80%;
+    }
+
+    #projects .project .project-description {
+        display: none;
+    }
+}
+
+@media(max-width: 435px) {
+    header {
+        min-height: 55vh;
+    }
+
+    header p {
+        font-size: 13vh;
+        transform: translateY(-20%);
+    }
+
+    #description img {
+        display: none;
+    }
+
+    #description p {
+        margin-top: 30px;
+        text-align: justify;
+        color: black;
+        font-size: 20px;
+    }
+
+    #description p span {
+        text-align: left;
+        color: black;
+    }
+
+    #projects .project {
+        margin: 50px auto;
+    }
+
+    #projects .opis {
+        padding-top: 0;
+        font-size: 20px;
+    }
+
+    .activity p {
+        font-size: 18px;
+    }
+
+    #contact .wrap .con .pom .icon i {
+        font-size: 17px;
+    }
+
+    #contact .wrap .con .pom .icon p {
+        font-size: 16px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        margin-left: 5px;
+    }
+
+    #contact .wrap p.title {
+        font-size: 23px;
+    }
+
+    #contact .wrap form {
+        width: 90%;
+    }
+
+    #contact .wrap form input {
+        font-size: 15px;
+        height: 26px;
+    }
+
+    #contact .wrap form textarea {
+        font-size: 15px;
+    }
+
+    #contact .wrap form button {
+        width: 45%;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    footer p.copyright {
+        font-size: 15px;
+    }
+
+    /* .project img {
+        width: 90%;
+        height: 130%;
+    } */
+}
+
+@media (max-width: 369px) {
+    header p {
+        font-size: 10vh;
+    }
+
+    #description p {
+        font-size: 17px;
+    }
+
+    .container p {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .activity p {
+        font-size: 15px;
+    }
+
+    #projects .opis {
+        width: 70%;
+        font-size: 17px;
+    }
+
+    #projects .project {
+        margin: 30px auto;
+        margin-bottom: 40px;
+    }
+
+    #projects .project img {
+        height: 120%;
+        width: 80%;
+    }
+
+    #contact .wrap .con .pom .icon i {
+        font-size: 15px;
+    }
+
+    #contact .wrap .con .pom .icon p {
+        font-size: 13.5px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        margin-left: 5px;
     }
 }
 

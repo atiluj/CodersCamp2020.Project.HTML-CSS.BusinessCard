@@ -18,7 +18,7 @@
     <nav id="navigation">
         <ul>
             <li><a href="#navigation">O MNIE</a></li>
-            <li><a href="#to-hobby">PROJEKTY</a></li>
+            <li><a href="#projects">PROJEKTY</a></li>
             <li><a href="#contact">KONTAKT</a></li>
         </ul>
     </nav>
@@ -41,7 +41,7 @@
     </div>
 
     <div id="projects">
-        <p>MOJE NAJLEPSZE PROJEKTY</p>
+        <p class="opis">MOJE NAJLEPSZE PROJEKTY</p>
         <div class="project clearfix">
             <img src="img/project.jpg" alt="">
             <div class="project-description">
@@ -91,8 +91,9 @@
 
     <footer>
         <div id="contact">
-            <div class="wrap clearfix">
-                <p>SKONTAKTUJ SIĘ ZE MNA!</p>
+            <div class="wrap">
+                <!-- wrap clearfix -->
+                <p>SKONTAKTUJ SIĘ ZE MNĄ!</p>
                 <div class="FormAndCon">
                     <form action="mailto:julita.osman@mail.pl" method="post">
                         <input type="text" placeholder="KIM JESTEŚ?" />
@@ -101,24 +102,25 @@
                         <button>WYŚLIJ</button>
                     </form>
                     <div class="con">
-                        <div class="icon clearfix">
-                            <i class="far fa-envelope"></i>
-                            <p>JULITA.OSMAN@GMAIL.COM</p>
-                        </div>
-                        <div class="icon clearfix">
-                            <i class="fab fa-github"></i>
-                            <p>ATILUJ</p>
-                        </div>
-                        <div class="icon clearfix">
-                            <i class="far fa-address-card"></i>
-                            <p> MOJE CV</p>
+                        <div class="pom">
+                            <a class="icon" href="mailto:julita.osman@gmail.com" target="_blank">
+                                <i class="far fa-envelope"></i>
+                                <p>JULITA.OSMAN@GMAIL.COM</p>
+                            </a>
+                            <a class="icon" href="https://github.com/atiluj" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <p>ATILUJ</p>
+                            </a>
+                            <a class="icon" href="cv.pdf" target="_blank">
+                                <i class="far fa-address-card"></i>
+                                <p> MOJE CV</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <p>&copy JULITA OSMAN 2020</p>
         </div>
-        <p>&copy JULITA OSMAN 2020</p>
     </footer>
 
 </body>

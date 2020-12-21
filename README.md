@@ -1,4 +1,6 @@
-Wizytówka / Portfolio
+Wizytówka / Portfolio 
+Napisane za pomocą HTML i CSS.
+LINK DO DZIAŁAJĄCEGO DEMO: https://atiluj.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/
 
 HTML/CSS
 WYKORZYSTANIE:

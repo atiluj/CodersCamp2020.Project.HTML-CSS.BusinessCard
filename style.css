@@ -284,7 +284,7 @@ nav ul li:hover a {
 .project {
     display: flex;
     width: 85%;
-    height: 23vh;
+    /* height: 23vh; */
     margin: 40px auto;
     margin-bottom: 60px;
     align-items: center;
@@ -644,6 +644,10 @@ footer p.copyright {
     .activity:hover p {
         letter-spacing: 3px;
     }
+
+    .container p {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 1248px) {
@@ -673,7 +677,7 @@ footer p.copyright {
 
     #projects .project .project-description p {
         font-size: 22px;
-        line-height: 3.2vh;
+        line-height: 1.2;
     }
 
     #contact .wrap .con .icon p {
@@ -774,12 +778,12 @@ footer p.copyright {
         width: 50%;
         padding: 20px 0;
         padding-top: 10px;
-        font-size: 25px;
+        font-size: 2;
     }
 
     #projects .project .project-description p {
         font-size: 23px;
-        line-height: 2.5vh;
+        line-height: 25px;
     }
 
     #projects .project .project-description h3 {
@@ -935,7 +939,7 @@ footer p.copyright {
     }
 
     .container p {
-        margin-top: 110px;
+        margin-top: 0px;
         font-size: 25px;
     }
 }
@@ -1020,7 +1024,6 @@ footer p.copyright {
     }
 
     .container p {
-        margin-top: 0px;
         font-size: 23px;
         text-align: center;
     }
@@ -1177,7 +1180,6 @@ footer p.copyright {
     }
 
     .container p {
-        margin-top: 30px;
         font-size: 16px;
     }
 

@@ -756,18 +756,7 @@ footer p.copyright {
     }
 
     #to-hobby a {
-        width: 32%;
-        height: 4.2vh;
-        bottom: 4.5vh;
-        font-size: 25px;
-        background-color: rgba(116, 79, 58, 0.15);
-        color: rgba(0, 0, 0, 0.8);
-        line-height: 4.2vh;
-    }
-
-    #to-hobby a:hover {
-        width: 32%;
-        letter-spacing: 1px;
+        display: none;
     }
 
     .project img {
@@ -905,10 +894,6 @@ footer p.copyright {
     #description p {
         font-size: 22px;
         line-height: 1.2;
-    }
-
-    #to-hobby a {
-        display: none;
     }
 
     .project {
@@ -1210,5 +1195,11 @@ footer p.copyright {
         font-size: 13.5px;
         line-height: 17px;
         letter-spacing: 1px;
+    }
+}
+
+@media(max-height:765px) {
+    #to-hobby a {
+        display: none;
     }
 }

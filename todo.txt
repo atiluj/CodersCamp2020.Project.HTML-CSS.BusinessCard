@@ -1,8 +1,8 @@
-890 równość
-
-cv
+vw
 
 zresamplowac zdjęcie profilowe
 
 formularz
 https://www.kurshtml.edu.pl/html/przyklad,formularze.html
+
+nav 6 px

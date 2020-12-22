@@ -692,10 +692,6 @@ footer p.copyright {
         margin-left: 8%;
     }
 
-    #contact .wrap .con .icon:hover p {
-        letter-spacing: 3px;
-    }
-
     #contact .wrap .con .icon i {
         margin-right: 20px;
     }
@@ -891,6 +887,29 @@ footer p.copyright {
 }
 
 @media (max-width: 890px) {
+    nav ul li:hover a {
+        transform: scale(1);
+    }
+
+    .project:hover img {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+
+    .activity img {
+        filter: grayscale(0);
+        opacity: 1;
+        width: 70%;
+    }
+
+    .activity:hover p {
+        letter-spacing: 2px;
+    }
+
+    #contact .wrap .con .icon i {
+        transform: scale(1);
+    }
+
     #description p {
         font-size: 22px;
         line-height: 1.2;
@@ -919,13 +938,13 @@ footer p.copyright {
         font-size: 23px;
     }
 
-    .activity img {
-        width: 70%;
-    }
-
     .container p {
         margin-top: 0px;
         font-size: 25px;
+    }
+
+    #contact .wrap .con .icon:hover i {
+        transform: scale(1);
     }
 }
 
@@ -983,11 +1002,6 @@ footer p.copyright {
 
     #projects .project .project-description h3 {
         font-size: 25px;
-    }
-
-    .project:hover img {
-        opacity: 0.8;
-        transform: scale(0.96);
     }
 
     .container p {
